@@ -57,3 +57,10 @@ python3 reliability_analysis.py --multiple full_test_output/qorvo_hand_above ful
 ```
 python3 reliability_analysis.py --multiple full_test_output/bad_hand_position full_test_output/bad_hand_position_10 full_test_output/bad_hand_position_2 full_test_output/bad_hand_position_3 full_test_output/bad_hand_position_4 full_test_output/bad_hand_position_5 full_test_output/bad_hand_position_6 full_test_output/bad_hand_position_7 full_test_output/bad_hand_position_8 full_test_output/bad_hand_position_9 full_test_output/bad_hand_position_antenna_away_from_contactless full_test_output/bad_hand_position_different_pos
 ```
+
+
+## Licence
+
+Copyright (C) ETH Zurich
+
+pure-sec-rel is available under the GNU GLP v3 license. See the LICENSE file for more info.

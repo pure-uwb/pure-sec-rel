@@ -1,0 +1,127 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBuffer>
+  <FrameBufferWindow width="0" keepAspectRatio="0" zoomToFitWindow="0" addressSpace="" format="0" height="0" autoEvaluate="0" scaleFactor="1" refreshPeriod="0" name="nRF52832DK-QANI-FreeRTOS_Common" addressText="" accessByDisplayWidth="0"/>
+ </FrameBuffer>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="nRF52832DK-QANI-FreeRTOS_Common" sizeText="" addressText=""/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="nRF52832DK-QANI-FreeRTOS_Common" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="nRF52832DK-QANI-FreeRTOS_Common" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" viewType="4" addressOrder="0" columnsText="" refreshPeriod="0" name="nRF52832DK-QANI-FreeRTOS_Common" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Projects"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Projects;QANI"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Projects;QANI;FreeRTOS"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Projects;QANI;FreeRTOS;QANI-FreeRTOS-Common"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;components"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;components;libraries"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;components;libraries;util"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;components;softdevice"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;components;softdevice;common"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;external"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;external;fprintf"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;modules"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;modules;nrfx"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;modules;nrfx;drivers"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;SDK_BSP;Nordic;NORDIC_SDK_17_1_0;modules;nrfx;drivers;src"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Apps"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Apps;Src"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Apps;Src;fira"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Boards"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Boards;Src"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Boards;Src;nRF52832DK"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Comm"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Comm;Src"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Comm;Src;BLE"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;Comm;Src;BLE;niq"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;HAL"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;HAL;Src"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;HAL;Src;nrfx"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Src;UWB"/>
+  <ProjectSessionItem path="nRF52832DK-QANI-FreeRTOS;nRF52832DK-QANI-FreeRTOS;Startup"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="nRF52832DK-QANI-FreeRTOS_Common" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="nRF52832DK-QANI-FreeRTOS_Common" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="nRF52832DK-QANI-FreeRTOS_Common" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="nRF52832DK-QANI-FreeRTOS_Common" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="*diag" name="*diag" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="diag->cir_I[20]" name="diag->cir_I[20]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="diag->cir_I[40]" name="diag->cir_I[40]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="diag->cir_I[41]" name="diag->cir_I[41]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="diag->cir_I[100]" name="diag->cir_I[100]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="diag->cir_I[200]" name="diag->cir_I[200]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="dw->mcps_runtime->diag.cir_I[0]" name="dw->mcps_runtime->diag.cir_I[0]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="dw->mcps_runtime->diag.cir_I[1]" name="dw->mcps_runtime->diag.cir_I[1]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="dw->mcps_runtime->diag.cir_I[2]" name="dw->mcps_runtime->diag.cir_I[2]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="dw->mcps_runtime->diag.cir_I[3]" name="dw->mcps_runtime->diag.cir_I[3]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="cir_I[1]" name="cir_I[1]" radix="16" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="diag->cir_I" name="diag->cir_I" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="&amp;diag->cir_I[0]" name="&amp;diag->cir_I[0]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="&amp;diag->cir_Q[0]" name="&amp;diag->cir_Q[0]" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="cir_I_ptr" name="cir_I_ptr" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="cir_Q_ptr" name="cir_Q_ptr" radix="-1" linenumber="0" filename="../ses"/>
+   <Watchpoint expression="stop-start" name="stop-start" radix="-1" linenumber="0" filename="../ses"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="126" useTextEdit="1" path="../../QANI-FreeRTOS-Common/main.c" left="0" selected="1" top="105" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="131" useTextEdit="1" path="../../../../../Src/UWB/dw3000_statistics.c" left="0" top="117" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="184" useTextEdit="1" path="../../../../../Src/Apps/Src/fira/fira_dw3000.c" left="0" top="144" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="99" useTextEdit="1" path="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/libraries/util/app_error_weak.c" left="0" top="69" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="49" y="94" useTextEdit="1" path="/usr/share/segger_embedded_studio_for_arm_7.12a/include/inttypes.h" left="0" top="71" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="79" useTextEdit="1" path="../../../../../Src/HAL/Src/nrfx/HAL_watchdog.c" left="0" top="51" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="59" useTextEdit="1" path="../../../../../Src/UWB/dw3000_lp_mcu.c" left="0" top="59" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="124" useTextEdit="1" path="../../../../../Src/UWB/dw3000_mcps_mcu.c" left="0" top="105" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="284" useTextEdit="1" path="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/modules/nrfx/drivers/src/nrfx_timer.c" left="0" top="245" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="802" useTextEdit="1" path="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/fprintf/nrf_fprintf_format.c" left="0" top="770" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="39" y="102" useTextEdit="1" path="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/components/softdevice/common/nrf_sdh_freertos.c" left="0" top="69" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="703" useTextEdit="1" path="../../../../../SDK_BSP/Nordic/NORDIC_SDK_17_1_0/external/freertos/source/include/FreeRTOS.h" left="0" top="681" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="356" useTextEdit="1" path="/usr/share/segger_embedded_studio_for_arm_7.12a/source/thumb_crt0.s" left="0" top="348" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="58" useTextEdit="1" path="../../../../../Src/Boards/Src/nRF52832DK/rf_tuning_config.c" left="0" top="49" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="70" y="181" useTextEdit="1" path="../../../../../Src/Comm/Src/BLE/niq/ble_niq.c" left="0" top="169" codecName="Default"/>
+ </Files>
+ <EMStudioWindow activeProject="nRF52832DK-QANI-FreeRTOS" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Common" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+</session>

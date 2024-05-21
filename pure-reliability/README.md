@@ -6,6 +6,7 @@ This README accompanies the reliability analysis of PURE described in the paper 
 The repository contains: 
 * The CIRs collected in payment scenarios (in the folder `full_test_output`)
 * The analysis of such CIRs with a LED and absolute threshold as proposed in the paper.
+* All the code used to collect the data in full_test_output in the folder `data_collection`
 
 ## PURE: Reliability analysis
 The folder `full_test_output` contains CIRs collected in: 
@@ -32,5 +33,4 @@ python3 reliability_analysis.py --multiple full_test_output/bad_hand_position fu
 
 ## Data collection
 
-The distane measurements are performed between a Qorvo DW3000 board and an Iphone running a modified version of the [Qorvo Nearby Interaction](https://apps.apple.com/ml/app/qorvo-nearby-interaction) app. Original sources for both the iOS application and the firmware can be downloaded [here](https://www.qorvo.com/products/p/DWM3001CDK#evaluation-tools). The application was modified to autmatically connect to nearby devices, perform ranging and reporting the measured distance and the 3D rotation of the phone at time of the measurement.
-
+We refer to the README in the `data_collection` folder for the instruction on how to recreate the testing environment.

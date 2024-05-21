@@ -132,49 +132,6 @@ def plot_cir(data,  ax = None, show = True, show_th = True, db = True, label = "
     if show:
         plt.show()
 
-def distance_errors(data):
-    distance_errors = {}
-    for abs_th in range(600, 1300, 50):
-        toa, _ =   CIR_Analyzer.get_first_peak_abs_opt(data["cir"],
-                                                       data["stsFpIndex"], 
-                                                       abs_th)
-        distance_errors[abs_th] = (toa - data["stsFpIndex"]) * 30 # Every index is 30 cm
-    distance_errors_df = pd.DataFrame(distance_errors)
-    print(distance_errors_df)
-    print(distance_errors_df.describe())
-    quantiles_list = [1, 0.995, 0.99, 0.985, 0.98]
-    quantiles = distance_errors_df.quantile(quantiles_list)
-    print(quantiles)
-    print(type(quantiles))
-    for i, q in enumerate(quantiles_list):
-        plt.plot(quantiles.columns, quantiles.iloc[i], label = f"quantile {q}")
-    plt.xlabel("ABS_TH")
-    plt.ylabel("Distance error (cm)")
-    plt.grid(visible=True)
-    plt.legend()
-    plt.show()
-
-def stat_tests(data):
-    def gaussian_test(var, values):
-        stat1, p1 = stats.shapiro(values)
-        stat2, p2 = stats.normaltest(values)
-
-        print(f"Gaussian: {var}\n\t{p1:5f} (Shapiro-Wilk)\n\t{p2:5f} (D'Agostino's)")
-    
-    grouped = data.groupby("nsame")["maxFpHeight"].apply(list)
-    print(grouped)
-    grouped_dict = {}
-    sem_trend = {}
-    for nsame in grouped.index:
-        grouped_dict[nsame] = grouped[nsame]
-        sem_trend[nsame] = []
-        for i in range(len(grouped[nsame])):
-            sem_trend[nsame].append(sem( grouped[nsame][:i]))
-    for k, v in sem_trend.items():
-        plt.plot(v, label = f"nsame: {k}, total: {len(grouped_dict[nsame])}")
-    plt.legend()
-    plt.show()
-
 def plot_power(data):
     cm = 1/2.54 
     size=10
@@ -186,11 +143,8 @@ def plot_power(data):
         if p in [-80, -20, 10]:
             filtered = data[data["power"] == p]
             means = filtered.groupby("nsame")["maxFpHeight"].mean()
-            print(means)
             x = means.index.to_numpy()
             y = means.to_numpy()
-            print(x)
-            print(y)
             plt.plot(x, y, label = f"Power = {p:3} dBm", marker = mStyles[i], alpha=0.9)
             i+= 1
     plt.xlabel("$n_c$", fontsize=16)
@@ -198,15 +152,6 @@ def plot_power(data):
     plt.grid()
     plt.yticks(range(0, 4001, 1000))
     plt.xticks(range(2048, 4097, 512))
-    
-    # ax.yaxis.set_minor_locator(MultipleLocator(500))
-    # ax.yaxis.set_major_locator(FixedLocator([x*1000 for x in range(5)]))
-
-    # ax.set_yticklabels(ax.get_yticks(), rotation=45)
-    # ax.set_xticklabels([])
-    # x = means.index
-    # y = 2*x - 4096  
-    # plt.plot(x, y, label = "2\cdot nsame - npulses", linestyle = ":")
     plt.tight_layout()
     plt.legend()
     plt.savefig("./diagrams/clip/power.pdf")
@@ -217,38 +162,10 @@ def plot_power(data):
     
     plt.show()
 
-    
-    
-    
-    
-    # print(data_grouped)
-    # for i in data_grouped.index:
-    #     data_grouped[i]["maxPeakHeight"]
-        
-        
-    # plt.xlabel("eprms (linear)")
-    # plt.ylabel("nsame")
-    # plt.legend()
-    # plt.show()
-    
-    # print("\n\n")
-    # print(out)
-    # print("\n\n")
-    
-        # ax = plt.subplot(gs[i, 0])
-        # plot_cir3_all(data, handle, 28 ,show = False, ax = ax)
-        # plt.title(f"Power: {p}")
-        # # ax.set_title(f"Power: {p}, Max: {np.max(data.get_value('trueFpHeight', handle = handle))}")
-        # i+= 1
-        
-        
-
-
 def get_grouped_by_nsame(data):
     return data.groupby("nsame")["maxFpHeight"].apply(list)    
  
 def nsame_vs_peak(data):
-    
     plt.scatter(data["nsame"], data["maxFpHeight"])
     plt.xlabel("nsame")
     plt.ylabel("Peak Height")
@@ -302,10 +219,6 @@ def show_multiple(paths, GRAPHS_OUTPUT = "./full_test_output_graphs"):
     data = data_load(paths, ABS_TH)
     #plot_cir(data)
     plot_power(data)
-    stat_tests(data)
-    nsame_vs_peak(data)
-    grouped = get_grouped_by_nsame(data)
-    # For Giovanni: Do what you want here
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -323,9 +236,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.compare:
         compare(args.good, args.medium, args.bad, args.severe_nlos)
-        exit()
-    if args.test is not None:
-        test(args.test)
         exit()
     if args.single is not None:
         show_single(args.single)

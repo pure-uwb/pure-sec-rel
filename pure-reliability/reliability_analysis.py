@@ -176,23 +176,6 @@ def plot_cir_setting(data, basedir, n = 20, savefig = True):
             plt.savefig(PLOT_FOLDER+f"/worst_pics_{idx}.png", dpi=300)
         plt.show()
 
-# def plot_cir_led(data,  ax = None, show = True, show_th = True, db = True):
-#     cm = 1/2.54  # centimeters in inches
-#     plt.rcParams['figure.figsize'] =[15*cm, 6*cm]
-#     for i, cir in enumerate(data["cir"]):
-#         plt.plot(cir, zorder = -1, color = f"gray")
-#     #ax.scatter(data["stsFpIndex"], data["stsFpHeight"], marker = "s", color = TP_COLOR, label="Early Peak")
-#     plt.scatter(data["trueFpIndex"], data["trueFpHeight"], marker = "s", color = "gray", label="Early Peak")
-#     plt.hlines(ABS_TH, 0, 512, color = "C0", label="Absolute Threshold $T$")
-#     plt.xlim(310, 380)
-#     plt.ylabel("$\mid CIR(t) \mid$", fontsize=11)
-#     plt.xlabel("$t$", fontsize = 13)
-#     # plt.legend()
-#     
-#     plt.savefig("diagrams/led.pdf", bbox_inches='tight')
-#     if show:
-#         plt.show()    
-
 def distance_errors(data):
     """
     In this plot for a given FRR   (= 1 - percentile), we show the distance that has to be accepted varying the absolute threshold that yields the specific FRR.
@@ -208,9 +191,9 @@ def distance_errors(data):
     distance_errors_df = pd.DataFrame(distance_errors)
     quantiles_list = [1, 0.995, 0.99, 0.985, 0.98, 0.90]
     quantiles = distance_errors_df.quantile(quantiles_list)
-    print(f"Fraction of supported ch. with d_max = 46 cm: {np.sum(distance_errors_df[ABS_TH]<46)/len(distance_errors_df)}")
-    print(f"Fraction of supported ch with d_max = 85 cm: {np.sum(distance_errors_df[ABS_TH]<85)/len(distance_errors_df)}")
-    print(f"Fraction of supported ch with d_max = 95 cm: {np.sum(distance_errors_df[ABS_TH]<95)/len(distance_errors_df)}")
+    print(f"FRR with d_max = 46 cm: {1 - np.sum(distance_errors_df[ABS_TH]<21)/len(distance_errors_df)}")
+    print(f"FRR d_max = 85 cm: {1 - np.sum(distance_errors_df[ABS_TH]<55)/len(distance_errors_df)}")
+    print(f"FRR with d_max = 95 cm: {1 - np.sum(distance_errors_df[ABS_TH]<70)/len(distance_errors_df)}")
     for i, q in enumerate(quantiles_list):
         plt.plot(np.array(quantiles.columns), np.array(quantiles.iloc[i]), label = f"quantile {q}")
     plt.xlabel("ABS_TH")

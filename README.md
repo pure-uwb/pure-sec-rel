@@ -1,11 +1,11 @@
-## PURE: Payments with UWB RElay-protection
+# PURE: Payments with UWB RElay-protection
 
 This repo contains the code and data used to evaluate the security and reliability of the Leading Edge detection algorithm proposed in the paper "PURE: Payments with UWB RElay-protection".
 
-## Environment
+## Environment & Data
 
 Execute `pip install -r requirements.txt` to install the python dependencies.
-
+Execute `./download_datasets.sh` to download the datasets collected for the evaluation of PURE.
 
 ## Pure Security
 The folder `pure-security` contains the data and code to reproduce the security analysis performed in the context of the paper "PURE: Payments with UWB RElay-protection". Specifically, it anaylsis the security of a fixed threshold for leading edge detection using UWB-HRP.

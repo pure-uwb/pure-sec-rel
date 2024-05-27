@@ -8,15 +8,17 @@ nsameName="nsame_2000_2500.zip"
 relName="full_test_output.zip"
 
 cd pure-security
-wget $powerUrl
+wget -O $powerName $powerUrl 
 unzip $powerName
 rm $powerName
 
-wget $nsameName
+wget -O $nsameName $nsameUrl 
 unzip $nsameName
 rm $nsameName
 
 cd ../pure-reliability
-wget $relUrl
+wget -O $relName $relUrl 
 unzip $relName
 rm $relName
+
+cd ..

@@ -1,3 +1,7 @@
 **/*.o
 **/*.d
 **/*.pdf
+**/full_test_output
+**/power_dataset
+**/nsame_2000_2500
+**/*.pdf

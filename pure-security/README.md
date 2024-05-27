@@ -14,3 +14,9 @@ The script `nsame-analyze-sampling.py` contains additional plots comparing the e
 ```
 python3 nsame-analyze-sampling.py --multiple nsame_2000_2500
 ```
+
+Run 
+```
+python3 analyze-power.py --multiple power_dataset/nsame_power_1 power_dataset/nsame_power_2 power_dataset/nsame_power_3
+```
+to see how the peak height changes with respect to the transmission power.
